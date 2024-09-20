@@ -15,43 +15,42 @@ Follow the steps below to contribute your project to this repository:
 
 ### Step 2: Clone the Repository
 - Open your terminal or Git Bash and run the following command to clone your forked repository to your local machine:
-  ```bash
+  \`\`\`bash
   git clone https://github.com/your-username/fcos-css.git
+  \`\`\`
+
 ### Step 3: Navigate to the Project Directory
 After cloning, navigate to the project folder:
-    ```bash
-    cd FSOC.V2
+  \`\`\`bash
+  cd fcos-css
+  \`\`\`
 
 ### Step 4: Start Building Your Project
 You can now start working on your HTML and CSS project. Make sure to follow the guidelines provided for the competition.
+
 ### Step 5: Commit Your Changes
 Once you've finished your project, add and commit the changes:
-```bash
+  \`\`\`bash
   git add .
   git commit -m "Add my CSS project for FCOS"
+  \`\`\`
 
 ### Step 6: Push Changes to Your Fork
 Push your changes to your forked repository:
-```bash
- git push origin YourBranch
+  \`\`\`bash
+  git push origin YourBranch
+  \`\`\`
+
 ### Step 7: Create a Pull Request
-Finally, go to the original repository on GitHub and click on Pull Requests.
-Click on New Pull Request, select your forked repository, and submit your pull request.
-📜 Guidelines
-Ensure that your code is clean, commented, and follows the best practices of HTML and CSS.
-Use responsive design principles wherever possible.
-No JavaScript is allowed for this competition.
-📧 Contact
+Finally, go to the original repository on GitHub and click on **Pull Requests**. Click on **New Pull Request**, select your forked repository, and submit your pull request.
+
+## 📜 Guidelines
+- Ensure that your code is clean, commented, and follows the best practices of HTML and CSS.
+- Use responsive design principles wherever possible.
+- **No JavaScript** is allowed for this competition.
+
+## 📧 Contact
 For any queries, feel free to reach out to us.
 
 Happy coding and good luck with your project!
-
-vbnet
-Copy code
-
-You can copy this directly into your repository's README.md file. It provides step-by-step instructions and guidelines for your participants.
-
-
-
-
-
+"""
