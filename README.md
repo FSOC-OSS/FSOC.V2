@@ -15,31 +15,29 @@ Follow the steps below to contribute your project to this repository:
 
 ### Step 2: Clone the Repository
 - Open your terminal or Git Bash and run the following command to clone your forked repository to your local machine:
-  \`\`\`bash
+  ```bash
   git clone https://github.com/your-username/fcos-css.git
-  \`\`\`
-
+  
 ### Step 3: Navigate to the Project Directory
 After cloning, navigate to the project folder:
-  \`\`\`bash
-  cd fcos-css
-  \`\`\`
-
+  ```bash
+  cd FSOC.V2
+  ```
 ### Step 4: Start Building Your Project
 You can now start working on your HTML and CSS project. Make sure to follow the guidelines provided for the competition.
 
 ### Step 5: Commit Your Changes
 Once you've finished your project, add and commit the changes:
-  \`\`\`bash
+  ```bash
   git add .
   git commit -m "Add my CSS project for FCOS"
-  \`\`\`
+  ```
 
 ### Step 6: Push Changes to Your Fork
 Push your changes to your forked repository:
-  \`\`\`bash
+  ```bash
   git push origin YourBranch
-  \`\`\`
+  ```
 
 ### Step 7: Create a Pull Request
 Finally, go to the original repository on GitHub and click on **Pull Requests**. Click on **New Pull Request**, select your forked repository, and submit your pull request.
