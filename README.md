@@ -16,7 +16,7 @@ Follow the steps below to contribute your project to this repository:
 ### Step 2: Clone the Repository
 - Open your terminal or Git Bash and run the following command to clone your forked repository to your local machine:
   ```bash
-  git clone https://github.com/your-username/fcos-css.git
+  git clone https://github.com/FSOC-OSS/FSOC.V2.git
   
 ### Step 3: Navigate to the Project Directory
 After cloning, navigate to the project folder:
