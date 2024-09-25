@@ -1,0 +1,27 @@
+name: PR Tracker
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+
+jobs:
+  pr-summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout FSOC.V2
+        uses: actions/checkout@v2
+
+      - name: Fetch PRs
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://github.com/FSOC-OSS/FSOC.V2.git" \
+          | jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at}' > pr-summary.json
+
+      - name: Filter and count PRs by date
+        run: |
+          TODAY=$(date -u +"%Y-%m-%d")
+          PR_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY))] | length' pr-summary.json)
+          MERGED_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY) and .merged != null)] | length' pr-summary.json)
+          echo "PRs created today: $PR_COUNT"
+          echo "PRs merged today: $MERGED_COUNT"
