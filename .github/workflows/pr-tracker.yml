@@ -15,7 +15,7 @@ jobs:
       - name: Fetch PRs
         run: |
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          "https://github.com/FSOC-OSS/FSOC.V2.git" \
+          "https://github.com/FSOC-OSS/FSOC.V2.git/pulls?state=all" \
           | jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at}' > pr-summary.json
 
       - name: Filter and count PRs by date
