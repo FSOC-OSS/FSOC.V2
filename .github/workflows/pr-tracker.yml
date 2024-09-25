@@ -3,6 +3,7 @@ name: PR Tracker
 on:
   schedule:
     - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   pr-summary:
@@ -16,12 +17,26 @@ jobs:
         run: |
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           "https://github.com/FSOC-OSS/FSOC.V2.git/pulls?state=all" \
-          | jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at}' > pr-summary.json
+          | jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at, user: .user.login}' > pr-summary.json
 
       - name: Filter and count PRs by date
         run: |
           TODAY=$(date -u +"%Y-%m-%d")
+          
+          # Count all PRs created today
           PR_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY))] | length' pr-summary.json)
+          
+          # Count merged PRs created today
           MERGED_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY) and .merged != null)] | length' pr-summary.json)
-          echo "PRs created today: $PR_COUNT"
-          echo "PRs merged today: $MERGED_COUNT"
+          
+          # List of users who created PRs today
+          echo "Users who created PRs today:"
+          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY)) | .user' pr-summary.json
+
+          # List of users whose PRs were merged today
+          echo "Users whose PRs were merged today:"
+          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY) and .merged != null) | .user' pr-summary.json
+
+          # Output the total count
+          echo "Total PRs created today: $PR_COUNT"
+          echo "Total PRs merged today: $MERGED_COUNT"
