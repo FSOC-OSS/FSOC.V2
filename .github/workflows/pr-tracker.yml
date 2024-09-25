@@ -2,7 +2,7 @@ name: PR Tracker
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
   workflow_dispatch: # Allows manual trigger
 
 jobs:
@@ -14,10 +14,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.x'
-      
+          node-version: "20.x"
+
       # Step 2: Checkout repository
-      - name: Checkout repository
+      - name: Checkout FSOC.V2
         uses: actions/checkout@v2
 
       # Step 3: Fetch PRs using GitHub API
@@ -25,28 +25,28 @@ jobs:
         run: |
           curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
-          "https://api.github.com/repos/FSOC_AIT/repo_name/pulls?state=all" \
+          "https://github.com/FSOC-OSS/FSOC.V2.git/pulls?state=all" \
           | jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at, user: .user.login}' > pr-summary.json
 
       # Step 4: Filter and count PRs by date, list users
       - name: Filter PRs by date
         run: |
           TODAY=$(date -u +"%Y-%m-%d")
-          
+
           # Extract all PRs created today
           PR_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY))] | length' pr-summary.json)
-          
+
           # Extract all merged PRs today
           MERGED_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY) and .merged != null)] | length' pr-summary.json)
-          
+
           # List of users who created PRs today
           echo "Users who created PRs today:"
           jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY)) | .user' pr-summary.json
-          
+
           # List of users whose PRs were merged today
           echo "Users whose PRs were merged today:"
           jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY) and .merged != null) | .user' pr-summary.json
-          
+
           # Output the total count
           echo "Total PRs created today: $PR_COUNT"
           echo "Total PRs merged today: $MERGED_COUNT"
