@@ -64,7 +64,7 @@ jobs:
         
         #Step 7 download the result
       - name: Upload PR summary artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: pr-summary
           path: pr-summary.json
