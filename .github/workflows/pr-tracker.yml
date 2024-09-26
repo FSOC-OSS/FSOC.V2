@@ -51,16 +51,16 @@ jobs:
 
           # List of users who created PRs today
           echo "Users who created PRs today:"
-          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY)) | .user' pr-summary.json
+          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY)) | .user.login' pr-summary.json
 
           # List of users whose PRs were merged today
           echo "Users whose PRs were merged today:"
-          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY) and .merged != null) | .user' pr-summary.json
+          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY) and .merged != null) | .user.login' pr-summary.json
 
           # Output the total count
           echo "Total PRs created today: $PR_COUNT"
-          echo "Total PRs merged today: $MERGED_COUN
-          # Step to upload pr-summary.json as an artifact
+          echo "Total PRs merged today: $MERGED_COUNT"
+
         
         #Step 7 download the result
       - name: Upload PR summary artifact
