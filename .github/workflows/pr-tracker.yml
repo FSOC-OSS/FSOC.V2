@@ -1,3 +1,4 @@
+
 name: PR Tracker
 
 on:
@@ -23,30 +24,18 @@ jobs:
       # Step 3: Fetch PRs using GitHub API
       - name: Fetch PRs
         run: |
+          # Fetch the PRs and store the output in pr-summary.json
           curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
-          "https://github.com/FSOC-OSS/FSOC.V2.git/pulls?state=all" \
-          | jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at, user: .user.login}' > pr-summary.json
+          "https://github.com/FSOC-OSS/FSOC.V2/pulls?state=all" \
+          | tee pr-response.json # Save API response to a file
 
-      # Step 4: Filter and count PRs by date, list users
-      - name: Filter PRs by date
+      # Step 4: Debugging - Check response format
+      - name: Check API Response
         run: |
-          TODAY=$(date -u +"%Y-%m-%d")
+          cat pr-response.json # Output the raw API response to check the structure
 
-          # Extract all PRs created today
-          PR_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY))] | length' pr-summary.json)
-
-          # Extract all merged PRs today
-          MERGED_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY) and .merged != null)] | length' pr-summary.json)
-
-          # List of users who created PRs today
-          echo "Users who created PRs today:"
-          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY)) | .user' pr-summary.json
-
-          # List of users whose PRs were merged today
-          echo "Users whose PRs were merged today:"
-          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY) and .merged != null) | .user' pr-summary.json
-
-          # Output the total count
-          echo "Total PRs created today: $PR_COUNT"
-          echo "Total PRs merged today: $MERGED_COUNT"
+      # Step 5: Process the PRs
+      - name: Process PRs
+        run: |
+          jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at, user: .user.login}' pr-response.json > pr-summary.json
