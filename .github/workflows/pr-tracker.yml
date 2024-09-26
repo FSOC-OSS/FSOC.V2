@@ -1,4 +1,3 @@
-
 name: PR Tracker
 
 on:
@@ -39,3 +38,33 @@ jobs:
       - name: Process PRs
         run: |
           jq '.[] | {title: .title, state: .state, merged: .merged_at, created_at: .created_at, user: .user.login}' pr-response.json > pr-summary.json
+    # Step 6: Filter and count PRs by date, list users
+      - name: Filter PRs by date
+        run: |
+          TODAY=$(date -u +"%Y-%m-%d")
+
+          # Extract all PRs created today
+          PR_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY))] | length' pr-summary.json)
+
+          # Extract all merged PRs today
+          MERGED_COUNT=$(jq --arg TODAY "$TODAY" '[.[] | select(.created_at | startswith($TODAY) and .merged != null)] | length' pr-summary.json)
+
+          # List of users who created PRs today
+          echo "Users who created PRs today:"
+          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY)) | .user' pr-summary.json
+
+          # List of users whose PRs were merged today
+          echo "Users whose PRs were merged today:"
+          jq --arg TODAY "$TODAY" '.[] | select(.created_at | startswith($TODAY) and .merged != null) | .user' pr-summary.json
+
+          # Output the total count
+          echo "Total PRs created today: $PR_COUNT"
+          echo "Total PRs merged today: $MERGED_COUN
+          # Step to upload pr-summary.json as an artifact
+        
+        #Step 7 download the result
+      - name: Upload PR summary artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr-summary
+          path: pr-summary.json
