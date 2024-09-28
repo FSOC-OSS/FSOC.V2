@@ -7,6 +7,7 @@
 html,body{
     width: 100vw;
     height: 100vh;
+    
 }
 
 .main{
@@ -238,7 +239,7 @@ header i:hover,header #cart:hover{
 
 .sec{
     width: 100%;
-    height: 225%;
+    height: 269%;
     display: flex;
     background-color: #414247;
     overflow-x: hidden;
@@ -264,7 +265,14 @@ header i:hover,header #cart:hover{
     color: #222227c0;
     text-align: center;
 }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100vw;
+    justify-content: center;
 
+}
 .sec #products{
     position: absolute;
     margin-top: 22%;
@@ -278,16 +286,22 @@ header i:hover,header #cart:hover{
 .sec #products #recommendedproduct::-webkit-scrollbar{
     display: none;
 }
+.rating {
+    font-size: 18px; 
+    color: gold; 
+    margin-bottom: 10px; 
+    cursor: pointer;
+    padding-left: 3%;
+}
 
 .sec #products #recommendedproduct{
-    display: inline-block;
+    display: grid;
+
     position: relative;
     width: 230px;
     height: 335px;
     border-radius: 20px;
     border: none;
-    margin-top: 10px;
-    margin-left: 10px;
     box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
     background-color:#F6F6F6;
     flex-wrap: wrap;
@@ -311,8 +325,8 @@ header i:hover,header #cart:hover{
 .sec #products #recommendedproduct #image img{
     max-width: 100%;
   max-height: 100%;
-  display: block; /* Ensures the image is centered within the container */
-  margin: auto; /* Centers the image horizontally */
+  display: block; 
+  margin: auto; 
   border-radius: 30px;
 }
 /* animation */
@@ -329,7 +343,7 @@ header i:hover,header #cart:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     border: transparent;
-    border-radius: 50px;
+    border-radius: 15px;
     background-color: #222227;
     color:white;
 }
@@ -337,7 +351,7 @@ header i:hover,header #cart:hover{
 .sec button:hover{
     transition: ease-in-out 400ms;
     scale: 1.02;
-    color: red;
+    color: #ffe593;
     cursor: pointer;
 
 }
@@ -353,12 +367,68 @@ header i:hover,header #cart:hover{
     text-align: center;
    
 }
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58afd1;
+    color: #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #ffe593;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #ffe593;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn1:focus {
+    outline: 2px dotted #55d7dc;
+  }
 .footer{
     white-space: nowrap;
     width: 100%;
     height: 40%;
     background-color: black;
     position: relative;
+    border: 70px;
+    /* transform: translate(0,300px); */
 }
 
 .footer #links1{
