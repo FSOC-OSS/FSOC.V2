@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
@@ -292,8 +294,8 @@ header i:hover,header #cart:hover{
 }
 
 .sec #para h1{
-    font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
     color: #222227c0;
     padding: 20px 30px;
     text-align: center;
