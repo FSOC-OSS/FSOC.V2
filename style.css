@@ -365,6 +365,8 @@ h5{
     height: 40%;
     background-color: black;
     position: relative;
+    text-align: center;
+   
 }
 
 .footer #links1{
@@ -377,6 +379,15 @@ h5{
     
     
 }
+.footer a {
+    /* ... other styles ... */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .footer a:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
  #link1 a{
 
     display: inline-block;
@@ -392,7 +403,6 @@ h5{
     font-size: 13px;
     word-spacing: 3px;
     letter-spacing: 1px;
-
 }
 
 
