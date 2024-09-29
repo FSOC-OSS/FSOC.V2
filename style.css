@@ -25,6 +25,8 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
+
 .Hamburger{
     display: flex;
     background-color: #494952;
@@ -94,8 +96,9 @@ header i{
 header #cart{
     color: whitesmoke;
     font-size: 30px;
-    margin-right: -280px;
+    margin-right: -210px;
     padding: 25px;
+    transform: translate(-29px,0);
 }
 
 .page{
