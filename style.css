@@ -56,6 +56,22 @@ header i{
     margin-right: 25px;
     padding: 25px;
 }
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu-icon:hover + .hamburger-menu {
+    display: block;
+}
 header #cart{
     color: whitesmoke;
     font-size: 30px;
