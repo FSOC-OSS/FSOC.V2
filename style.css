@@ -29,6 +29,7 @@ header{
 
 .Hamburger{
     display: flex;
+    display: none;
     background-color: #494952;
     position: relative;
     align-items: center;
@@ -558,6 +559,83 @@ header i:hover,header #cart:hover{
 }
 
 /* Media Queries */
+@media (max-width: 768px) {
+    *{
+        font-size: small;
+    }
+    .page {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+img {
+    width: 59%;
+}
+ul {
+    transform: translate(-95px, 0px);
+}
+header #cart {
+    transform: translate(-90px, 0);
+}
+i.ri-menu-3-fill {
+    transform: translate(14px, 0px);
+}
+#right h1 {
+    
+   
+    margin-left: 3%;
+    
+    font-size: 184px;
+    
+}
+.cards {
+    gap: 5px;
+    
+   
+}
+#recommendedproduct {
+    display: grid;
+    position: relative;
+    width: 216px;
+    height: 331px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
+    background-color: #F6F6F6;
+    flex-wrap: wrap;
+}
+    #left h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    header ul {
+        display: none; /* Hide menu on smaller screens */
+    }
+
+    .Hamburger {
+        display: flex; /* Show Hamburger menu */
+    }
+
+    header i, header #cart {
+        font-size: 1.25rem;
+    }
+
+    .sec {
+        padding: 20px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;
