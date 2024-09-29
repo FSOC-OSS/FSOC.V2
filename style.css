@@ -272,7 +272,7 @@ header i:hover,header #cart:hover{
     color: white;
     font-family: 'Poppins', sans-serif;
     margin-left: 20px;
-   
+    text-align: center;
 
 }
 .sec #products #recommendedproduct::-webkit-scrollbar{
@@ -286,11 +286,12 @@ header i:hover,header #cart:hover{
     height: 335px;
     border-radius: 20px;
     border: none;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
     box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
-    background-color:#F6F6F6;
-    flex-wrap: wrap;
+    background-color:#bbbbba;
+    overflow: hidden;
+    text-align: center;
 }
 /* animation */
 
@@ -306,6 +307,7 @@ header i:hover,header #cart:hover{
     height: 255px;
     margin: 10px;
     margin-bottom: 100px;
+    background-color: #bbbbba;
     
 }
 .sec #products #recommendedproduct #image img{
@@ -324,22 +326,27 @@ header i:hover,header #cart:hover{
 .sec button{
     position: absolute;
     bottom: 5px;
-    left: 37px;
+    left: 30px;
+    width: 170px;
     padding: 15px 16px;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     border: transparent;
     border-radius: 50px;
-    background-color: #222227;
+    background-color: #313237;
     color:white;
 }
 /* animation */
 .sec button:hover{
     transition: ease-in-out 400ms;
     scale: 1.02;
-    color: red;
+    color: rgb(228, 222, 222);
     cursor: pointer;
 
+}
+h5{
+    color: #93684a;
+    font-weight: 800;
 }
 .sec #products #recommendedproduct h5{
     z-index: 100;
@@ -348,7 +355,6 @@ header i:hover,header #cart:hover{
     width: 80%;
     padding:3px 6px;
     margin-left: 20px;
-    background-color:rgba(255, 0, 0, 0.766);
     border-radius: 50px;
     text-align: center;
    
