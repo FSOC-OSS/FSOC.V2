@@ -238,11 +238,11 @@ header i:hover,header #cart:hover{
 
 .sec{
     width: 100%;
-    height: 225%;
+    height: 280%; 
+    /* changed height from 225% to 280%, which has fixed the display for my laptop adding media queries can make it work for all devices, there can be other ways to do it but this one also works  */
     display: flex;
     background-color: #414247;
     overflow-x: hidden;
-    
 }
 
 .sec #para{
@@ -411,4 +411,27 @@ header i:hover,header #cart:hover{
     }
     
 }
+
+/* ====== adding media queries for the fix in the footer ======= */
+
+@media screen and (min-width: 390px) and (max-width: 844px){
+    /* for iphone 12 */
+    .sec{
+       width: 180%;
+       height:900% ;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px){
+    /* for ipad air */
+    .sec{
+       width: 180%;
+       height:220% ;
+    }
+}
+
+/* similarily we could configure this for all, love you sir */
+    
+
+
+
 
