@@ -347,7 +347,7 @@ header i:hover,header #cart:hover{
     background-color: #222227;
     color:white;
 }
-/* animation */
+
 .sec button:hover{
     transition: ease-in-out 400ms;
     scale: 1.02;
@@ -421,42 +421,115 @@ header i:hover,header #cart:hover{
   .btn1:focus {
     outline: 2px dotted #55d7dc;
   }
-.footer{
-    white-space: nowrap;
-    width: 100%;
-    height: 40%;
-    background-color: black;
+
+
+.footer {
+    background: #1f1f1f;
+    padding: 40px 0;
     position: relative;
-    border: 70px;
-    /* transform: translate(0,300px); */
 }
 
-.footer #links1{
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
     display: inline-block;
-    height: 100%;
-    width: 25%;
-    border: 2px solid red;
+    color: #ff8c00;
+}
+
+.footer-section h3:after {
+    content: '';
     position: absolute;
-    justify-content: space-between;
-    
-    
+    width: 50px;
+    height: 2px;
+    background: #ff8c00;
+    bottom: -5px;
+    left: 0;
+    transition: 0.4s;
 }
- #link1 a{
 
-    display: inline-block;
-    font-family: Nike TG,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: #fff;
-    font-size: 13px;
-    text-transform: uppercase;
+.footer-section:hover h3:after {
+    width: 100px;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
     text-decoration: none;
-    margin-left: 50px;
-    padding-top: 20px;
-    line-height: 40px;
-    font-weight: 700;
-    font-size: 13px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
 
+.footer-section ul li a:hover {
+    color: #ff8c00;
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background: #181818;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
+
+
+.footer-section:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.footer-bottom {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
 
 
