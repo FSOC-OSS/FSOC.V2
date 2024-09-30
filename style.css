@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
+::-webkit-scrollbar {
+    width: 19px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 11px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+body {
+    scrollbar-width: thin;           
+    scrollbar-color: #888686 #f7f3f3;   
+}
+
 *{
     margin: 0%;
     padding: 0%;
