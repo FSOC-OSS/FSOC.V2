@@ -349,11 +349,15 @@ header i:hover,header #cart:hover{
    
 
 }
+.recommended-product img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
 .sec #products #recommendedproduct::-webkit-scrollbar{
     display: none;
 }
 .rating {
-    font-size: 18px; 
+    font-size: 1.2rem; 
     color: gold; 
     margin-bottom: 10px; 
     cursor: pointer;
@@ -698,3 +702,15 @@ i.ri-menu-3-fill {
     
 }
 
+@media (max-width: 768px) {
+    section.sec {
+            height: 492rem;
+    }
+    .cards {
+        transform: translate(-27px, 65px);
+}
+h2 {
+    transform: translate(81px, 53px);
+    font-size: medium;
+}
+    }
