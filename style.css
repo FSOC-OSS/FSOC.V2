@@ -356,9 +356,10 @@ header i:hover,header #cart:hover{
 .footer{
     white-space: nowrap;
     width: 100%;
-    height: 40%;
-    background-color: black;
+    height: 50%;
+    background-color: rgb(80, 189, 189);
     position: relative;
+    
 }
 
 .footer #links1{
@@ -374,7 +375,7 @@ header i:hover,header #cart:hover{
  #link1 a{
 
     display: inline-block;
-    font-family: Nike TG,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Nike TG,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
