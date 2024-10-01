@@ -238,7 +238,7 @@ header i:hover,header #cart:hover{
 
 .sec{
     width: 100%;
-    height: 225%;
+    height: 301%;
     display: flex;
     background-color: #414247;
     overflow-x: hidden;
@@ -388,6 +388,85 @@ header i:hover,header #cart:hover{
     letter-spacing: 1px;
 
 }
+.about-us {
+    padding: 60px 20px;
+    background-color:#797b85;
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  .about-us h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00fafa;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-us ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .about-us ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .about-us ul li strong {
+    color: #222;
+  }
+  
+  .about-us h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #444;
+  }
+  
+  .thank-you {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .flex{
+    display: flex;
+    /* gap: 75px; */
+  }
+  img.img-about {
+    width: 22rem;
+    transform: translateX(67px);
+}
+  @media (max-width: 768px) {
+    .about-us {
+      padding: 40px 10px;
+    }
+  
+    .about-us h2 {
+      font-size: 28px;
+    }
+  
+    .about-us h3 {
+      font-size: 20px;
+    }
+  
+    .about-us p, .about-us ul li {
+      font-size: 16px;
+    }
+  }
+  
 
 
 @media only screen and (max-width: 1501px){
