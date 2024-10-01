@@ -16,6 +16,22 @@ html,body{
      
 
 }
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #414346;
+    border-radius: 10px;
+    background-color: #414346;
+  }
+::-webkit-scrollbar-thumb {
+    background: #ff0404;
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-corner{
+    background-color: #414346 ;
+}
 header{
     display: flex;
     height: 10%;
@@ -411,4 +427,5 @@ header i:hover,header #cart:hover{
     }
     
 }
+
 
