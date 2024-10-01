@@ -279,6 +279,15 @@
             &copy; 2024 | Nike India
         </div>
     </footer>
+<div class="custom-cursor" id="cursor"></div>
+
+<script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px'
+    });
+</script>
        
 </body>
 </html>

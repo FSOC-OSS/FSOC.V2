@@ -19,10 +19,24 @@
     background: #555;
 }
 
+html{
+    overflow: hidden;
+}
 
 body {
     scrollbar-width: thin;           
-    scrollbar-color: #888686 #f7f3f3;   
+    scrollbar-color: #888686 #f7f3f3;  
+    cursor : none ; 
+}
+
+.custom-cursor{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
 }
 
 *{
