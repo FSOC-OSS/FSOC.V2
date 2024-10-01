@@ -19,7 +19,7 @@ html,body{
 header{
     display: flex;
     height: 10%;
-    background-color: #222227;
+    background-color: #dc0707;
     position: relative;
     align-items: center;
     justify-content: space-between;
@@ -28,8 +28,6 @@ header img{
     height: 30px;
     position: relative;
     margin-left: 50px;
-    
-    
 }
 header ul{
     display: flex;
@@ -46,7 +44,7 @@ header ul li a{
     margin-left: 70px;
     font-family: 'Teko', sans-serif;
     font-size: 30px;
-    color:grey;
+    color: white;
     letter-spacing: 2px;
 
 }
