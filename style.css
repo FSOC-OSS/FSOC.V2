@@ -33,8 +33,7 @@ body {
 
 html,body{
     width: 100vw;
-    height: 100vh;
-    
+    height: 105vh;
 }
 
 .main{
@@ -128,6 +127,7 @@ header #cart{
     padding: 25px;
     transform: translate(-29px,0);
 }
+@import url('https://fonts.cdnfonts.com/css/my-puma-outlined');
 
 .page{
     width: 100%;
@@ -346,8 +346,6 @@ header i:hover,header #cart:hover{
     color: white;
     font-family: 'Poppins', sans-serif;
     margin-left: 20px;
-   
-
 }
 .recommended-product img {
     width: 100%; /* Responsive image */
@@ -363,6 +361,13 @@ header i:hover,header #cart:hover{
     cursor: pointer;
     padding-left: 3%;
 }
+
+h5:hover {
+    background-color: red !important;
+    transition: all 0.7s ease-in-out !important;
+    cursor: pointer;
+}
+
 
 .sec #products #recommendedproduct{
     display: grid;
@@ -390,14 +395,13 @@ header i:hover,header #cart:hover{
     height: 255px;
     margin: 10px;
     margin-bottom: 100px;
-    
 }
 .sec #products #recommendedproduct #image img{
-    max-width: 100%;
+  max-width: 100%;
   max-height: 100%;
-  display: block; 
-  margin: auto; 
-  border-radius: 30px;
+  display: block; /* Ensures the image is centered within the container */
+  margin: auto; /* Centers the image horizontally */
+  border-radius: 60px;
 }
 /* animation */
 .sec #products #recommendedproduct #image img:hover{
@@ -425,17 +429,20 @@ header i:hover,header #cart:hover{
     cursor: pointer;
 
 }
+#products{
+    padding-left: 5rem;
+}
+
 .sec #products #recommendedproduct h5{
-    z-index: 100;
+    z-index: 50;
     position: absolute;
     bottom: 70px;
     width: 80%;
     padding:3px 6px;
     margin-left: 20px;
-    background-color:rgba(255, 0, 0, 0.766);
-    border-radius: 50px;
+    background-color:rgba(8, 5, 87, 0.766);
+    border-radius: 100px;
     text-align: center;
-   
 }
 .draw-border {
     box-shadow: inset 0 0 0 4px #58afd1;
@@ -469,8 +476,38 @@ header i:hover,header #cart:hover{
     border-color: #ffe593;
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
+    height: 30%;
+    background-color: rgb(43, 2, 2);
+}
+
+.footer #link1{
+    display: inline-block;
     height: 100%;
-    border-radius: 15px;
+    width: 20%;
+    border: 2px solid rgb(43, 2, 2);
+    position: relative;
+    justify-content: space-around;
+}
+
+.links a{
+     font-family: 'My Puma Outlined', sans-serif; 
+     font-style: italic;
+}
+
+.links a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 10px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
   }
   .draw-border:hover::before {
     transition-delay: 0s, 0s, 0.25s;
@@ -677,8 +714,36 @@ i.ri-menu-3-fill {
         flex-basis: 100%;
         text-align: center;
     }
-}
 
+}
+#link1:hover{
+    background: linear-gradient(50deg, #c88b8b, #0e11c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent
+}
+#link2:hover{
+    background: linear-gradient(50deg, #c88b8b, #0e11c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent
+}
+#link3:hover{
+    background: linear-gradient(50deg, #c88b8b, #0e11c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent
+}
+#link4:hover{
+    background: linear-gradient(50deg, #c88b8b, #0e11c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent
+}
 
 @media only screen and (max-width: 1501px){
 
