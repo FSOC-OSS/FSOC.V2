@@ -261,7 +261,7 @@ header i:hover,header #cart:hover{
 .sec #para p{
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
-    color: #222227c0;
+    color: #030104c0;
     text-align: center;
 }
 
@@ -269,8 +269,8 @@ header i:hover,header #cart:hover{
     position: absolute;
     margin-top: 22%;
     font-size: 1.45rem;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    color: rgb(243, 241, 239);
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
    
 
@@ -284,12 +284,12 @@ header i:hover,header #cart:hover{
     position: relative;
     width: 230px;
     height: 335px;
-    border-radius: 20px;
+    border-radius: 0px;
     border: none;
     margin-top: 10px;
     margin-left: 10px;
     box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
-    background-color:#F6F6F6;
+    background-color:#6ce0cd;
     flex-wrap: wrap;
 }
 /* animation */
@@ -330,7 +330,7 @@ header i:hover,header #cart:hover{
     font-size: 17px;
     border: transparent;
     border-radius: 50px;
-    background-color: #222227;
+    background-color: #9c29d2;
     color:white;
 }
 /* animation */
@@ -348,7 +348,7 @@ header i:hover,header #cart:hover{
     width: 80%;
     padding:3px 6px;
     margin-left: 20px;
-    background-color:rgba(255, 0, 0, 0.766);
+    background-color:rgba(207, 72, 234, 0.766);
     border-radius: 50px;
     text-align: center;
    
