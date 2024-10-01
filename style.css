@@ -44,8 +44,8 @@ header ul li a{
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 70px;
-    font-family: 'Teko', sans-serif;
-    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
     color:grey;
     letter-spacing: 2px;
 
@@ -233,7 +233,7 @@ header ul li a:hover,header ul li a.active{
 header i:hover,header #cart:hover{
     transition: ease-in-out 300ms;
     scale: 1.2;
-    color: red;
+    color: rgb(106, 255, 0);
 }
 
 .sec{
@@ -337,7 +337,7 @@ header i:hover,header #cart:hover{
 .sec button:hover{
     transition: ease-in-out 400ms;
     scale: 1.02;
-    color: red;
+    color: greenyellow;
     cursor: pointer;
 
 }
