@@ -3,6 +3,11 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
 
 html,body{
     width: 100vw;
@@ -593,4 +598,35 @@ header i:hover,header #cart:hover{
     #left, #right {
         width: 50%;
     }
+}
+/* Custom scrollbar styles for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+    height: 15px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Round edges */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #343b68fc; /* Color of the scrollbar thumb on hover */
+}
+
+/* Firefox custom scrollbar styles */
+* {
+    scrollbar-width: thin; /* Firefox uses this property */
+    scrollbar-color: #530e0e #61b864df; /* Thumb color and track color */
+}
+
+/* Ensure specific containers can scroll */
+.sec {
+    overflow-y: auto; /* Enable vertical scrolling for this section */
+    height: 100%; /* Ensure height is set to allow scrolling */
 }
