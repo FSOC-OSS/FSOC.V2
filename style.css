@@ -282,11 +282,11 @@ header i:hover,header #cart:hover{
     position: relative;
     width: 230px;
     height: 335px;
-    border-radius: 20px;
+    border-radius: 40px;
     border: none;
     margin-top: 10px;
     margin-left: 10px;
-    box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
+    box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(117, 145, 156, 0.886) 0px 1px 6px 0px;
     background-color:#F6F6F6;
     flex-wrap: wrap;
 }
@@ -311,7 +311,7 @@ header i:hover,header #cart:hover{
   max-height: 100%;
   display: block; /* Ensures the image is centered within the container */
   margin: auto; /* Centers the image horizontally */
-  border-radius: 30px;
+  border-radius: 50px;
 }
 /* animation */
 .sec #products #recommendedproduct #image img:hover{
