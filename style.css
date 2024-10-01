@@ -3,6 +3,11 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
 
 html,body{
     width: 100vw;
@@ -412,3 +417,216 @@ header i:hover,header #cart:hover{
     
 }
 
+/* Extra Small Devices (phones in portrait mode) */
+@media only screen and (max-width: 320px) {
+    header ul li a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    header img {
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    #left h1 {
+        font-size: 40px;
+        line-height: 50px;
+        top: 5%;
+        left: 5%;
+    }
+
+    #right h1 {
+        font-size: 80px;
+        line-height: 100px;
+        margin-left: 5%;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    #smallbox, #smallbox1 {
+        height: auto;
+        position: static;
+        margin-top: 10px;
+    }
+
+    #explore {
+        width: 100%;
+        bottom: 10px;
+        text-align: center;
+    }
+
+    .sec #para h1 {
+        font-size: 2rem;
+    }
+
+    .sec #para p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Devices (phones in landscape mode and small tablets) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    header ul li a {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    header img {
+        height: 25px;
+        margin-left: 15px;
+    }
+
+    #left h1 {
+        font-size: 60px;
+        line-height: 70px;
+        top: 10%;
+        left: 5%;
+    }
+
+    #right h1 {
+        font-size: 100px;
+        line-height: 120px;
+        margin-left: 5%;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .sec #para h1 {
+        font-size: 2.5rem;
+    }
+
+    .sec #para p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium Devices (tablets in portrait mode) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header ul li a {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    #left h1 {
+        font-size: 80px;
+        line-height: 90px;
+        top: 15%;
+        left: 5%;
+    }
+
+    #right h1 {
+        font-size: 150px;
+        line-height: 180px;
+        margin-left: 5%;
+    }
+
+    .page {
+        flex-direction: row;
+    }
+
+    #left, #right {
+        width: 50%;
+    }
+}
+
+/* Large Devices (tablets in landscape mode and small desktops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header ul li a {
+        font-size: 24px;
+        margin-left: 30px;
+    }
+
+    #left h1 {
+        font-size: 90px;
+        line-height: 100px;
+        top: 20%;
+        left: 5%;
+    }
+
+    #right h1 {
+        font-size: 170px;
+        line-height: 200px;
+        margin-left: 5%;
+    }
+
+    .page {
+        flex-direction: row;
+    }
+
+    #left, #right {
+        width: 50%;
+    }
+}
+
+/* Extra Large Devices (desktops) */
+@media only screen and (min-width: 1025px) {
+    header ul li a {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    #left h1 {
+        font-size: 130px;
+        line-height: 140px;
+        top: 20%;
+        left: 5%;
+    }
+
+    #right h1 {
+        font-size: 200px;
+        line-height: 240px;
+        margin-left: 5%;
+    }
+
+    .page {
+        flex-direction: row;
+    }
+
+    #left, #right {
+        width: 50%;
+    }
+}
+/* Custom scrollbar styles for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+    height: 15px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Round edges */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #343b68fc; /* Color of the scrollbar thumb on hover */
+}
+
+/* Firefox custom scrollbar styles */
+* {
+    scrollbar-width: thin; /* Firefox uses this property */
+    scrollbar-color: #530e0e #61b864df; /* Thumb color and track color */
+}
+
+/* Ensure specific containers can scroll */
+.sec {
+    overflow-y: auto; /* Enable vertical scrolling for this section */
+    height: 100%; /* Ensure height is set to allow scrolling */
+}
