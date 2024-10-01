@@ -22,33 +22,47 @@ header{
     background-color: #222227;
     position: relative;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* so the elements don't clog together */
+}
+.navbar{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    width: 90%;
+    height: 35px;
+}
+.cart{
+    display: flex;
+    width: 150px;
+    justify-content: center;
 }
 header img{
-    height: 30px;
+    height: 20px;
     position: relative;
     margin-left: 50px;
-    
-    
 }
 header ul{
     display: flex;
-
+    align-items: center;
 }
 header ul li{
     list-style: none;
-    
-    
+
 }
 header ul li a{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
-    margin-left: 70px;
-    font-family: 'Teko', sans-serif;
-    font-size: 30px;
+    margin-left: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color:grey;
     letter-spacing: 2px;
-
+}
+header ul li a:hover{
+    text-decoration: underline;
+    transition-duration: 1s;
+    border: 1px solid transparent;
 }
 header i{
     color: whitesmoke;
