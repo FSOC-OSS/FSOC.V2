@@ -5,6 +5,7 @@
 }
 
 
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
@@ -57,7 +58,7 @@ header{
 .Hamburger{
     display: flex;
     display: none;
-    background-color: #494952;
+    background-color: #f01616;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -86,7 +87,7 @@ header{
     color:rgb(255, 251, 251);
     letter-spacing: 2px;
     &:hover{
-        color: grey;
+        color: rgb(235, 10, 10);
     }
 }
 header img{
