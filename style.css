@@ -599,7 +599,6 @@ header i:hover,header #cart:hover{
     }
     
     .footer-section {
-        flex: 1 1 45%; /* Takes almost half of the container width */
         margin: 10px 0;
     }
 
@@ -743,5 +742,45 @@ h2 {
     transform: translate(81px, 53px);
     font-size: medium;
 }
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        header img {
+            width: 56px;
+        }
+        .page #shoe {
+            z-index: 100;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            width: 95%;
+            height: 29%;
+            top: -1%;
+            left: 20%;
+        }
+        .box {
+            display: flex;
+            width: 50%;
+        }
+        h3 {
+            transform: translateX(-121px);
+        }
+        ul {
+            transform: translate(-122px, 0px);
+        }
+        .footer-p {
+            transform: translateX(-122px);
+        }
+        h4 {
+            transform: translateX(-236px);
+        }
+        p {
+            transform: translateX(-301px);
+        }
+        img {
+            width: 100%;
+        }
+        #right h1 {
+             margin-left: -4%;
+        }
     }
     
