@@ -12,16 +12,16 @@
     <title>Nike India</title>
 </head>
 <body>
-    
+    <div class="custom-cursor" id="cursor"></div>
        <div class="main">
         <div class="header">
            <header>
                <img src="logo.png" alt="">
                <ul>
-                   <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">products</a></li>
-                <li><a href="#">support</a></li>
+                   <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">products</a></li>
+                <li><a href="#support">support</a></li>
             </ul>
             
             <i class="ri-shopping-cart-line" id="cart"></i>
@@ -30,10 +30,10 @@
         </header>
         <div class="Hamburger">
             <ul>
-                <li><a href="#" class="active whiteTxt">Home</a></li>
-                <li><a href="#"  class="whiteTxt">About</a></li>
-                <li><a href="#"  class="whiteTxt">products</a></li>
-                <li><a href="#" class="whiteTxt">support</a></li>
+                <li><a href="index.html" class="active whiteTxt">Home</a></li>
+                <li><a href="#about"  class="whiteTxt">About</a></li>
+                <li><a href="#products"  class="whiteTxt">products</a></li>
+                <li><a href="#support" class="whiteTxt">support</a></li>
             </ul>
         </div>
     </div>
@@ -255,13 +255,42 @@
                 
         </div>
        </section>
-       <footer class="footer">
-        <div class="container">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Nike is a global leader in sportswear, committed to innovation and inspiring athletes at all levels. Our mission is to bring performance-driven products that empower individuals to achieve their potential, while driving sustainability and creating a better future through sport.</p>
+       <section class="about-sec">
+            <div id="about">
+                <div class="about-content">
+            <h2>About Us</h2>
+            
+                <p>At Nike, we are driven by a mission to bring inspiration and innovation to every athlete in the world. Founded in 1964 as Blue Ribbon Sports, we have grown to become a global leader in sportswear and athletic equipment. Our commitment to pushing boundaries and challenging the status quo is reflected in our diverse range of products, from high-performance shoes and apparel to cutting-edge sports technology. <br><br>
+
+                    We believe that if you have a body, you are an athlete, and our goal is to support every individual in unlocking their full potential. Through constant innovation, collaboration with top athletes, and an unwavering focus on sustainability, we continue to lead the industry with breakthrough designs and products. <br><br>
+                    
+                    At the heart of Nike is a deep passion for sport and an unwavering dedication to providing the best for athletes at all levels. From our iconic Air Max and Flyknit technologies to our commitment to reducing environmental impact, we strive to make a lasting impact on both the sporting world and the planet.
+                    
+                    With a global presence and a community of passionate fans, Nike is more than just a brand—it’s a movement that empowers people to dream big, push boundaries, and just do it.</p>
+            </div>
+            <!-- <div class="headqrtrs">
+                <img src="headqrtr.png">
+            </div> -->
             </div>
 
+
+       </section>
+       <section class="contact-us">
+        <div id="support">
+            <div class="support-content">
+        <h2>Get Help</h2>
+        
+            <p>Customer Support: (82)-345-234-90<br> <a>Drop Us a Mail: support@nike.in</a></p>
+        </div>
+        <!-- <div class="headqrtrs">
+            <img src="headqrtr.png">
+        </div> -->
+        </div>
+
+
+   </section>
+       <footer class="footer">
+        <div class="container">
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul class="links" id="link1">
@@ -279,6 +308,23 @@
             &copy; 2024 | Nike India
         </div>
     </footer>
-       
+    <div class="custom-cursor" id="cursor"></div>
+   <script>
+    const circle = document.getElementById('cursor');
+document.addEventListener('mousemove', (evnt) => {
+circle.style.left = evnt.pageX + 'px';
+circle.style.top = evnt.pageY + 'px'
+});
+
+document.addEventListener('mouseenter', () => {
+	circle.style.display = 'block';
+});
+
+document.addEventListener('mouseleave', () => {
+	circle.style.display = 'none';
+});
+
+   </script>
+
 </body>
 </html>

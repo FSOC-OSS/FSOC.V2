@@ -19,7 +19,6 @@
     background: #555;
 }
 
-
 body {
     scrollbar-width: thin;           
     scrollbar-color: #888686 #f7f3f3;   
@@ -34,7 +33,18 @@ body {
 html,body{
     width: 100vw;
     height: 100vh;
+    cursor: none;
     
+}
+.custom-cursor{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid red;
+    /* background-color: red; */
+    position: absolute;
+    /* pointer-events: none; */
+    z-index: 9999;
 }
 
 .main{
@@ -77,6 +87,7 @@ header{
    
     
 }
+
 .Hamburger ul li a{
     text-transform: uppercase;
     text-decoration: none;
@@ -305,7 +316,7 @@ header i:hover,header #cart:hover{
 
 .sec{
     width: 100%;
-    height: 269%;
+    height: 180%;
     display: flex;
     background-color: #414247;
     overflow-x: hidden;
@@ -315,7 +326,7 @@ header i:hover,header #cart:hover{
 .sec #para{
     position:absolute;
     margin-top: 50px;
-    left: 33%;  
+    left: 33%; 
 }
 
 .sec #para h1{
@@ -349,6 +360,77 @@ header i:hover,header #cart:hover{
    
 
 }
+
+
+.about-sec{
+    width: 100%;
+    height: 120%;
+    display: flex;
+    background-color: #232327;
+    overflow-x: hidden;
+    
+}
+.about-sec #about h2{
+    position: absolute;
+    margin-top: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 59, 59);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+   
+
+}
+.about-sec #about p{
+    position: absolute;
+    margin-top: 15%;
+    font-size: 1.45rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+
+}
+
+
+.contact-us{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: #404347;
+    overflow-x: hidden;
+    
+}
+.contact-us #support h2{
+    position: absolute;
+    margin-top: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 59, 59);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+   
+
+}
+.contact-us #support p{
+    position: absolute;
+    margin-top: 15%;
+    font-size: 1.45rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+
+}
+.contact-us #support a{
+    position: absolute;
+    margin-top: 5%;
+    font-size: 1.45rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0px;
+
+}
+
+
 .recommended-product img {
     width: 100%; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
@@ -626,6 +708,7 @@ i.ri-menu-3-fill {
     
    
 }
+
 #recommendedproduct {
     display: grid;
     position: relative;
