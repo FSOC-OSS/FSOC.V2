@@ -247,6 +247,12 @@ header #cart{
     
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 #right button{
     display: inline-block;
     position: absolute;
