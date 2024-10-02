@@ -53,6 +53,72 @@ header{
     justify-content: space-between;
 }
 
+.about-section {
+  width: 100%;
+  background-color: rgb(236, 222, 204);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  color: #222227;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff8c00;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #222227;
+}
+
+.about-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 369px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 .Hamburger{
     display: flex;
