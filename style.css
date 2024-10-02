@@ -65,8 +65,8 @@ header{
    height: 30vh;
    
 }
-.whiteTxt{
-    color: white;
+.pink{
+    color: rgb(232, 14, 170);
 }
 .Hamburger ul{
     display: grid;
