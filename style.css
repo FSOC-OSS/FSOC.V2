@@ -47,10 +47,11 @@ html,body{
 header{
     display: flex;
     height: 10%;
-    background-color: #222227;
+    background-color: #333;
     position: relative;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 
@@ -108,11 +109,12 @@ header ul li{
 header ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 70px;
-    font-family: 'Teko', sans-serif;
-    font-size: 30px;
-    color:grey;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:#F6F6F6;
     letter-spacing: 2px;
+    transition: color 0.3s ease;
 
 }
 header i{
@@ -122,10 +124,9 @@ header i{
     padding: 25px;
 }
 header #cart{
-    color: whitesmoke;
+    color: #ffa500;
     font-size: 30px;
-    margin-right: -210px;
-    padding: 25px;
+    margin-right: 25px;
     transform: translate(-29px,0);
 }
 
@@ -289,7 +290,7 @@ transition: ease-in-out 400ms;
 
 header ul li a:hover,header ul li a.active{
     cursor: pointer;
-    color: white;
+    color: #ffa500;
 }
 #right button:hover{
     transition: ease-in 200ms;
