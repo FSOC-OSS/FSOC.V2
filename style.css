@@ -343,7 +343,7 @@ header i:hover,header #cart:hover{
     position: absolute;
     margin-top: 22%;
     font-size: 1.45rem;
-    color: white;
+    color: gold;
     font-family: 'Poppins', sans-serif;
     margin-left: 20px;
    
@@ -369,17 +369,17 @@ header i:hover,header #cart:hover{
 
     position: relative;
     width: 230px;
-    height: 335px;
-    border-radius: 20px;
+    height: 385px;
+    border-radius: 30px;
     border: none;
-    box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
-    background-color:#F6F6F6;
+    box-shadow: black 0px 5px 15px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
+    background-color:rgb(9, 158, 232);
     flex-wrap: wrap;
 }
 /* animation */
 
 .sec #products #recommendedproduct:hover{
-    transition: ease-in-out 100ms;
+    transition: ease-in-out 600ms;
     scale: 1.04;
 
 }
@@ -432,7 +432,7 @@ header i:hover,header #cart:hover{
     width: 80%;
     padding:3px 6px;
     margin-left: 20px;
-    background-color:rgba(255, 0, 0, 0.766);
+    background-color:black;
     border-radius: 50px;
     text-align: center;
    
