@@ -12,7 +12,7 @@
     <title>Nike India</title>
 </head>
 <body>
-    
+    <div class="custom-cursor" id="cursor"></div>
        <div class="main">
         <div class="header">
            <header>
@@ -294,6 +294,23 @@
             &copy; 2024 | Nike India
         </div>
     </footer>
-       
+    <div class="custom-cursor" id="cursor"></div>
+   <script>
+    const circle = document.getElementById('cursor');
+document.addEventListener('mousemove', (evnt) => {
+circle.style.left = evnt.pageX + 'px';
+circle.style.top = evnt.pageY + 'px'
+});
+
+document.addEventListener('mouseenter', () => {
+	circle.style.display = 'block';
+});
+
+document.addEventListener('mouseleave', () => {
+	circle.style.display = 'none';
+});
+
+   </script>
+
 </body>
 </html>
