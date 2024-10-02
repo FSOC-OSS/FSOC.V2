@@ -353,6 +353,41 @@ header i:hover,header #cart:hover{
     text-align: center;
    
 }
+.about-us-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-us-section h2 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section .mission h3 {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+
+
+
+
 .footer{
     white-space: nowrap;
     width: 100%;
