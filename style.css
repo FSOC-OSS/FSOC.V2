@@ -412,3 +412,29 @@ header i:hover,header #cart:hover{
     
 }
 
+@media (max-width: 1024px) {
+    body{
+        /* overflow-x: hidden; */
+    }
+    .cards {
+        display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 15px;
+    }
+    
+    #recommendedproduct {
+      padding: 15px;
+    }
+  
+    #recommendedproduct img {
+      width: 100%;
+      height: auto;
+    }
+    .sec {
+        width: 100%;
+        height: 567%;
+    }
+    section.sec {
+        justify-content: center;
+}
+  }
