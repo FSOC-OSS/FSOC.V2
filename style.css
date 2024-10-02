@@ -19,6 +19,9 @@
     background: #555;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     scrollbar-width: thin;           
