@@ -34,7 +34,9 @@ body {
 html,body{
     width: 100vw;
     height: 100vh;
-    
+
+
+
 }
 
 .main{
@@ -469,6 +471,10 @@ header i:hover,header #cart:hover{
     border-color: #ffe593;
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
+
+    height: 40%;
+    background-color: rgb(52, 50, 50);
+
     height: 100%;
     border-radius: 15px;
   }
@@ -496,7 +502,9 @@ header i:hover,header #cart:hover{
 .footer {
     background: #1f1f1f;
     padding: 40px 0;
+
     position: relative;
+    text-transform: uppercase;
 }
 
 .footer .container {
