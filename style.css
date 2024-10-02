@@ -714,3 +714,107 @@ h2 {
     font-size: medium;
 }
     }
+
+ /* ABOUT US SECTION */
+ .cont{
+    position: relative;
+    height:100%;
+}
+.left-bar{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+.stories,.impact, .company {
+    padding-right: 80px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #bd3627;
+}
+.nike-bg{
+    width: 100%; 
+    height: 120%; 
+
+}
+.about{
+    position: absolute;
+    top:10%;
+    left: 43%;
+    font-size: 50px;
+}
+
+.left-text{
+    position: absolute;
+    top: 5%;
+    left: 71%;
+    font-style: italic;
+}
+
+.change {
+    position: absolute;
+    top: 4%;
+    left: 83%;
+    transition: opacity 0.5s ease;
+    font-style: italic;
+  }
+  
+.change::before {
+    content: "ATHLETES DREAMERS PROS"; 
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s; 
+    color: #bd3627;
+}
+
+.change::after {
+    content: "TEAMS REBELS BEGINNERS"; 
+    position: absolute;
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    color: #bd3627;
+}
+
+.change:hover::before {
+    opacity: 0; 
+}
+
+.change:hover::after {
+    opacity: 1; 
+}
+
+.text{
+    padding-left: 10px;
+    position: absolute;
+    top: 18%;
+    line-height: 120%;
+    color: black; 
+    font-size: 24px; 
+}
+.nike-text-img {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 35%;
+    height: 50%;
+    filter: brightness(80%);
+}
+.bottom-bar{
+    position: absolute;
+    display: flex;
+    top: 53%;
+    justify-content: center;
+    
+}
+
+.bottom-text{
+    position: absolute;
+    top: 72%;
+    left: 45%;
+    font-size: 100px;
+}
+
