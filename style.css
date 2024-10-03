@@ -34,7 +34,7 @@ body {
 html,body{
     width: 100vw;
     height: 100vh;
-    
+    cursor: none;
 }
 
 .main{
@@ -44,6 +44,19 @@ html,body{
      
 
 }
+  .custom-cursor {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f6f5f5; 
+    pointer-events: none; 
+    
+  }
 header{
     display: flex;
     height: 10%;
