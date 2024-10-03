@@ -44,6 +44,19 @@ html,body{
      
 
 }
+  .custom-cursor {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f6f5f5; 
+    pointer-events: none; 
+    
+  }
 header{
     display: flex;
     height: 10%;
@@ -88,6 +101,24 @@ header{
     &:hover{
         color: grey;
     }
+}
+nav{
+    background-color:#222227; ;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav span{
+    color: rgb(255, 251, 251); 
+    list-style-type: none;
+    
+}
+nav span a{
+    color: #F6F6F6;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: larger;
 }
 header img{
     height: 30px;
@@ -510,6 +541,7 @@ header i:hover,header #cart:hover{
 .footer-section {
     flex-basis: 30%;
     margin-bottom: 20px;
+    margin-left: -14rem;
 }
 
 .footer-section h3 {
@@ -517,7 +549,7 @@ header i:hover,header #cart:hover{
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
-    color: #ff8c00;
+    color: #ff5500;
 }
 
 .footer-section h3:after {
@@ -538,7 +570,18 @@ header i:hover,header #cart:hover{
 .footer-section p {
     color: #ccc;
     line-height: 1.8;
+    font-weight: 700;
 }
+.learn-more-button {
+    background-color: #ff4800; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 2rem;
+  }
 
 .footer-section ul {
     list-style: none;
