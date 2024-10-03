@@ -354,7 +354,7 @@ header i:hover,header #cart:hover{
 .footer{
     white-space: nowrap;
     width: 100%;
-    height: 40%;
+    height: 45%;
     background-color:#dc0707;
     position: relative;
 }
@@ -385,6 +385,11 @@ header i:hover,header #cart:hover{
     word-spacing: 3px;
     letter-spacing: 1px;
 
+}
+.about-section{
+    margin-left:50px;
+    margin-top: 50px;
+    color: white;
 }
 
 
