@@ -713,4 +713,26 @@ h2 {
     transform: translate(81px, 53px);
     font-size: medium;
 }
-    }
+.footer .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+}
+
+.footer-section p,
+.footer-section ul li a {
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+}}
