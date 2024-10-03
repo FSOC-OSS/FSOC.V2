@@ -714,3 +714,8 @@ h2 {
     font-size: medium;
 }
     }
+/* Custom scrollbar styles for Firefox */
+body {
+    scrollbar-width: thin;  /* Width of the scrollbar */
+    scrollbar-color: #888686 #f7f3f3;  /* Scrollbar thumb color and track color */
+}
