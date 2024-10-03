@@ -89,6 +89,24 @@ header{
         color: grey;
     }
 }
+nav{
+    background-color:#222227; ;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav span{
+    color: rgb(255, 251, 251); 
+    list-style-type: none;
+    
+}
+nav span a{
+    color: #F6F6F6;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
 header img{
     height: 30px;
     position: relative;
