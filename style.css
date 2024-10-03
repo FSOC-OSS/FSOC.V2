@@ -626,36 +626,26 @@ i.ri-menu-3-fill {
     
    
 }
-#recommendedproduct {
-    display: grid;
-    position: relative;
-    width: 216px;
-    height: 331px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: rgba(16, 16, 16, 0.782) 0px 2px 3px 0px, rgba(134, 139, 141, 0.886) 0px 1px 6px 0px;
-    background-color: #F6F6F6;
-    flex-wrap: wrap;
-}
+
     #left h1 {
-        font-size: 2.5rem;
+        font-size: 2.55rem;
         text-align: center;
     }
 
     header ul {
-        display: none; /* Hide menu on smaller screens */
+        display: none; 
     }
 
     .Hamburger {
-        display: flex; /* Show Hamburger menu */
+        display: flex; 
     }
 
     header i, header #cart {
-        font-size: 1.25rem;
+        font-size: 1.255rem;
     }
 
     .sec {
-        padding: 20px;
+        padding: 22px;
     }
 
     .footer .container {
@@ -663,11 +653,11 @@ i.ri-menu-3-fill {
     }
 
     .footer-section {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .footer .container {
         flex-direction: column;
         align-items: center;
@@ -683,7 +673,7 @@ i.ri-menu-3-fill {
 @media only screen and (max-width: 1501px){
 
     #shoe img {
-        scale: 0.9;
+        scale: 0.89;
     }
     
 }
@@ -697,20 +687,20 @@ i.ri-menu-3-fill {
 @media only screen and (max-width: 1376px){
 
     #shoe img {
-        scale: 0.7;
+        scale: 0.71;
     }
     
 }
 
 @media (max-width: 768px) {
     section.sec {
-            height: 492rem;
+            height: 494rem;
     }
     .cards {
-        transform: translate(-27px, 65px);
+        transform: translate(-27px, 64px);
 }
 h2 {
-    transform: translate(81px, 53px);
+    transform: translate(81px, 52px);
     font-size: medium;
 }
     }
