@@ -572,8 +572,8 @@ header i:hover,header #cart:hover{
 
 
 .footer-section:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
 }
 
 .footer-bottom {
@@ -714,3 +714,8 @@ h2 {
     font-size: medium;
 }
     }
+/* Custom scrollbar styles for Firefox */
+body {
+    scrollbar-width: thin;  /* Width of the scrollbar */
+    scrollbar-color: #888686 #f7f3f3;  /* Scrollbar thumb color and track color */
+}
