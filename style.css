@@ -589,7 +589,7 @@ header i:hover,header #cart:hover{
     }
 }
 
-/* Media Queries */
+/* Media Queries to make landing page responsive*/ 
 @media (max-width: 768px) {
     *{
         font-size: small;
@@ -638,7 +638,7 @@ i.ri-menu-3-fill {
     flex-wrap: wrap;
 }
     #left h1 {
-        font-size: 2.5rem;
+        font-size: 2.55rem;
         text-align: center;
     }
 
@@ -651,11 +651,11 @@ i.ri-menu-3-fill {
     }
 
     header i, header #cart {
-        font-size: 1.25rem;
+        font-size: 1.255rem;
     }
 
     .sec {
-        padding: 20px;
+        padding: 22px;
     }
 
     .footer .container {
@@ -683,34 +683,34 @@ i.ri-menu-3-fill {
 @media only screen and (max-width: 1501px){
 
     #shoe img {
-        scale: 0.9;
+        scale: 0.93;
     }
     
 }
 @media only screen and (max-width: 1424px){
 
     #shoe img {
-        scale: 0.8;
+        scale: 0.81;
     }
     
 }
-@media only screen and (max-width: 1376px){
+@media only screen and (max-width: 1386px){
 
     #shoe img {
-        scale: 0.7;
+        scale: 0.79;
     }
     
 }
 
 @media (max-width: 768px) {
     section.sec {
-            height: 492rem;
+            height: 482rem;
     }
     .cards {
-        transform: translate(-27px, 65px);
+        transform: translate(-27px, 64px);
 }
 h2 {
-    transform: translate(81px, 53px);
+    transform: translate(80px, 53px);
     font-size: medium;
 }
     }
