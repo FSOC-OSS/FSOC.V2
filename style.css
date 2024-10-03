@@ -714,3 +714,44 @@ h2 {
     font-size: medium;
 }
     }
+/* For tablet screens (768px-1024px), improve the responsiveness of the recommended items section */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sec {
+        padding: 20px;
+        height: auto; /* Ensure height adapts to content */
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #recommendedproduct {
+        display: grid;
+        width: 220px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    #recommendedproduct h5 {
+        font-size: 1rem;
+    }
+
+    #recommendedproduct #image {
+        width: 100%;
+        height: auto;
+    }
+
+    #recommendedproduct #image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn1 {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
