@@ -714,3 +714,67 @@ h2 {
     font-size: medium;
 }
     }
+/* For tablet screens (768px-1024px), improve the responsiveness of the landing page */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    header img {
+        margin: 0;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .Hamburger {
+        display: flex;
+    }
+
+    .page {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #left h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #right h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #shoe {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    #smallbox, #smallbox1 {
+        width: 90%;
+        left: 5%;
+    }
+}
