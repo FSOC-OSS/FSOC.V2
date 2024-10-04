@@ -714,3 +714,88 @@ h2 {
     font-size: medium;
 }
     }
+
+@media (max-width: 480px) {
+    header img {
+        height: 25px;
+        margin-left: 20px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .Hamburger {
+        display: flex;
+    }
+
+    header i {
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #left h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #right h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #shoe img {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #smallbox, #smallbox1 {
+        width: 90%;
+        left: 5%;
+        font-size: 12px;
+    }
+
+    #explore, #price {
+        font-size: 12px;
+        width: 200px;
+    }
+
+    #right button {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .sec {
+        padding: 0 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    #recommendedproduct {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
