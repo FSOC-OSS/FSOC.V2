@@ -714,3 +714,43 @@ h2 {
     font-size: medium;
 }
     }
+@media (max-width: 480px) {
+    .sec {
+        padding: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #recommendedproduct {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #recommendedproduct h5 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #recommendedproduct .rating {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #recommendedproduct button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #recommendedproduct #image img {
+        width: 100%;
+        height: auto;
+    }
+}
