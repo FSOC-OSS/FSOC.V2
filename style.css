@@ -36,6 +36,11 @@ html,body{
     height: 100vh;
     
 }
+#logo{height: 80px; position: sticky; transition: ease-in-out 200ms;
+    scale: 1.3;
+}
+#logo:hover{
+height: 83px;}
 
 .main{
     width: 100vw;
@@ -46,11 +51,11 @@ html,body{
 }
 header{
     display: flex;
-    height: 10%;
+    height: 12%;
     background-color: #222227;
-    position: relative;
+    position:relative;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 
 
@@ -98,8 +103,8 @@ header img{
 }
 header ul{
     display: flex;
-
 }
+
 header ul li{
     list-style: none;
     
@@ -112,7 +117,7 @@ header ul li a{
     font-family: 'Teko', sans-serif;
     font-size: 30px;
     color:grey;
-    letter-spacing: 2px;
+    letter-spacing: 2px; font-weight: 700;
 
 }
 header i{
